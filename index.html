@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coding - 코딩의 새로운 패러다임</title>
+  <meta name="description" content="문법을 치던 시대에서 의도를 지휘하는 시대로. AI와 함께하는 새로운 개발 트렌드 '바이브 코딩'을 만나보세요.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Header & Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <i data-lucide="zap" class="logo-icon"></i>
+        <span>VIBE_CODING</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#definition" class="nav-link" id="link-def">정의</a>
+        <a href="#simulator" class="nav-link" id="link-sim">시뮬레이터</a>
+        <a href="#pillars" class="nav-link" id="link-pillars">핵심 가치</a>
+        <a href="#quiz" class="nav-link" id="link-quiz">성향 테스트</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="glow-bg glow-purple"></div>
+    <div class="glow-bg glow-cyan"></div>
+    
+    <div class="hero-container">
+      <div class="hero-text-content">
+        <span class="badge" id="hero-badge">AI-Driven Coding Paradigm</span>
+        <h1 class="hero-title" id="hero-title">
+          코딩은 이제<br>
+          <span class="gradient-text">‘바이브(Vibe)’</span>다
+        </h1>
+        <p class="hero-subtitle">
+          <span id="typed-text"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          바이브 코딩(Vibe Coding)은 개발자가 한 줄 한 줄 코드를 수동으로 입력하는 대신, AI 모델에게 명세와 의도를 전달하고 조율하며 제품을 완성해 나가는 완전히 새로운 차원의 개발 기법입니다.
+        </p>
+        <div class="hero-actions">
+          <a href="#simulator" class="btn btn-primary" id="btn-hero-sim">
+            <span>체험해보기</span>
+            <i data-lucide="play"></i>
+          </a>
+          <a href="#definition" class="btn btn-secondary" id="btn-hero-learn">
+            <span>더 알아보기</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-media-content">
+        <div class="media-frame">
+          <div class="media-window-header">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+            <span class="window-title">vibe_composer.ai</span>
+          </div>
+          <div class="media-body">
+            <img src="assets/vibe_hero.png" alt="Vibe Coding Illustration" class="hero-image" id="hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Definition Section -->
+  <section class="definition-section" id="definition">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" id="def-title">무엇이 다른가요?</h2>
+        <p class="section-subtitle">전통적 코딩 방식과 바이브 코딩 방식의 비교</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Traditional Card -->
+        <div class="card comp-card traditional-card">
+          <div class="card-icon-wrapper red-theme">
+            <i data-lucide="code-2"></i>
+          </div>
+          <h3>Traditional Coding</h3>
+          <p class="card-meta">구문과 구글링의 시대</p>
+          <ul class="comp-list">
+            <li><i data-lucide="x-circle"></i>언어별 문법 오류(Syntax Error) 디버깅에 시간 소모</li>
+            <li><i data-lucide="x-circle"></i>StackOverflow 검색과 API 레퍼런스 문서 확인이 일상</li>
+            <li><i data-lucide="x-circle"></i>반복적인 보일러플레이트 코드 작성의 피로감</li>
+            <li><i data-lucide="x-circle"></i>낮은 수준(Low-level)의 구현 디테일에 갇힌 시야</li>
+          </ul>
+        </div>
+
+        <!-- Vibe Coding Card -->
+        <div class="card comp-card vibe-card">
+          <div class="card-icon-wrapper glow-theme">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3>Vibe Coding</h3>
+          <p class="card-meta">의도와 싱크의 시대</p>
+          <ul class="comp-list">
+            <li><i data-lucide="check-circle-2"></i>자연어 대화를 통해 코드 자동 생성 및 디버깅 수행</li>
+            <li><i data-lucide="check-circle-2"></i>에이전트가 에러 로그를 읽고 스스로 솔루션 도출</li>
+            <li><i data-lucide="check-circle-2"></i>보일러플레이트 제로, 오로지 기획과 화면 논리에 집중</li>
+            <li><i data-lucide="check-circle-2"></i>높은 수준(High-level)의 사용자 경험과 시스템 디자인 관할</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quote Box -->
+      <div class="quote-box">
+        <div class="quote-icon"><i data-lucide="quote"></i></div>
+        <blockquote class="quote-text">
+          "바이브 코딩은 프로그래머가 코드 한 줄 타이핑하지 않고 온전히 기획자, 감독의 마음가짐으로 AI에게 최종 본을 만들도록 유도하는 새로운 예술이다."
+        </blockquote>
+        <cite class="quote-author">— 테크 커뮤니티의 생각 리더들</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Vibe Simulator Section -->
+  <section class="simulator-section" id="simulator">
+    <div class="glow-bg glow-pink"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Vibe Simulator</h2>
+        <p class="section-subtitle">바이브 코딩의 생산성을 실시간 시뮬레이션으로 경험하세요.</p>
+      </div>
+
+      <div class="simulator-layout">
+        <!-- Simulator Controls -->
+        <div class="card sim-controls-card">
+          <h3 class="controls-title"><i data-lucide="sliders"></i> 바이브 매개변수 설정</h3>
+          
+          <div class="control-group">
+            <label for="theme-selector">프로젝트 테마</label>
+            <select id="theme-selector" class="form-select">
+              <option value="space">🌌 우주 슈팅 게임 (HTML5 Canvas)</option>
+              <option value="finance">💳 자산 관리 대시보드 (Finance Dashboard)</option>
+              <option value="todo">🎯 개인 생산성 칸반 보드 (Kanban Task Board)</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <div class="slider-label-row">
+              <label for="slider-energy">바이브 강도 (Vibe Level)</label>
+              <span class="slider-val" id="val-energy">80%</span>
+            </div>
+            <input type="range" id="slider-energy" min="10" max="100" value="80" class="form-range">
+          </div>
+
+          <div class="control-group">
+            <div class="slider-label-row">
+              <label for="slider-creativity">창의성 레벨 (Creativity)</label>
+              <span class="slider-val" id="val-creativity">75%</span>
+            </div>
+            <input type="range" id="slider-creativity" min="10" max="100" value="75" class="form-range">
+          </div>
+
+          <div class="control-group">
+            <div class="slider-label-row">
+              <label for="slider-speed">작업 속도 (Speed)</label>
+              <span class="slider-val" id="val-speed">85%</span>
+            </div>
+            <input type="range" id="slider-speed" min="10" max="100" value="85" class="form-range">
+          </div>
+
+          <div class="control-group">
+            <label for="prompt-input">AI 에이전트 지시어 (Prompt)</label>
+            <textarea id="prompt-input" class="form-textarea" rows="4"></textarea>
+          </div>
+
+          <button id="btn-sync" class="btn btn-glowing btn-block">
+            <i data-lucide="repeat"></i>
+            <span>VIBE SYNC 개시</span>
+          </button>
+        </div>
+
+        <!-- Simulator Output Display -->
+        <div class="sim-display-card">
+          <div class="display-tabs">
+            <button class="tab-btn active" id="tab-terminal" data-tab="terminal">
+              <i data-lucide="terminal"></i> Terminal Logs
+            </button>
+            <button class="tab-btn" id="tab-code" data-tab="code">
+              <i data-lucide="code"></i> AI Code View
+            </button>
+            <button class="tab-btn" id="tab-preview" data-tab="preview">
+              <i data-lucide="eye"></i> Live Preview
+            </button>
+          </div>
+
+          <div class="display-body">
+            <!-- Terminal Tab Content -->
+            <div class="tab-content active" id="content-terminal">
+              <div class="terminal-container">
+                <div class="terminal-scroll" id="terminal-log">
+                  <div class="terminal-line system">[SYSTEM] Vibe engine initialized. Ready to sync.</div>
+                  <div class="terminal-line prompt">프로젝트 테마와 지시어를 선택하고 [VIBE SYNC 개시] 버튼을 눌러주세요.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Code Tab Content -->
+            <div class="tab-content" id="content-code">
+              <div class="code-container">
+                <pre class="code-scroll"><code id="code-output">// AI 코드 생성 대기 중...</code></pre>
+              </div>
+            </div>
+
+            <!-- Preview Tab Content -->
+            <div class="tab-content" id="content-preview">
+              <div class="preview-container" id="preview-wrapper">
+                <div class="preview-placeholder" id="preview-placeholder">
+                  <i data-lucide="monitor-play" class="placeholder-icon"></i>
+                  <p>바이브 싱크를 마치면 여기에 실행 결과가 표시됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Pillars Section -->
+  <section class="pillars-section" id="pillars">
+    <div class="glow-bg glow-purple-right"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Vibe Coding의 4대 핵심 축</h2>
+        <p class="section-subtitle">성공적인 바이브 코딩을 관통하는 4가지 본질</p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1 -->
+        <div class="card pillar-card">
+          <div class="pillar-num">01</div>
+          <h3>의도 중심 오케스트레이션</h3>
+          <p>구문이나 자료구조 구현 같은 지엽적인 문제에서 벗어나 전체적인 소프트웨어 동작 흐름과 UX 시나리오의 설계를 의도(Intent) 중심으로 풀어나갑니다.</p>
+        </div>
+        <!-- Pillar 2 -->
+        <div class="card pillar-card">
+          <div class="pillar-num">02</div>
+          <h3>초고속 반복 루프</h3>
+          <p>설계 수정 사항이 발생하면 즉시 말 한마디로 전체 코드를 수정하고 브라우저 프리뷰에서 실시간으로 결과를 확인해 나가는 민첩한 피드백 메커니즘을 가집니다.</p>
+        </div>
+        <!-- Pillar 3 -->
+        <div class="card pillar-card">
+          <div class="pillar-num">03</div>
+          <h3>추상화 장벽 활용</h3>
+          <p>어려운 데이터베이스 마이그레이션이나 복잡한 CSS 포지셔닝 로직 등을 내부 백그라운드 코드로 위임하여 개발자는 비즈니스 요건 충족에 집중할 수 있습니다.</p>
+        </div>
+        <!-- Pillar 4 -->
+        <div class="card pillar-card">
+          <div class="pillar-num">04</div>
+          <h3>디렉터 마인드셋</h3>
+          <p>개발자는 더 이상 단순한 벽돌공(구현체 작성)이 아니라 프로덕션의 총괄 감독(제품 가치 평가자)으로서 최종 작동 품질에 대해 책임지고 검증합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personality Quiz Section -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Are You a Vibe Coder?</h2>
+        <p class="section-subtitle">간단한 문답을 통해 나만의 바이브 코딩 스타일과 적합도를 알아보세요.</p>
+      </div>
+
+      <div class="card quiz-card">
+        <div class="quiz-progress">
+          <div class="quiz-progress-inner" id="quiz-progress-bar"></div>
+        </div>
+
+        <div id="quiz-welcome">
+          <div class="quiz-intro-icon"><i data-lucide="award"></i></div>
+          <h3 class="quiz-title">바이브 코더 성향 테스트</h3>
+          <p class="quiz-desc">개발 업무나 코딩 중에 드러나는 성향을 알아보고 어떤 바이브를 가졌는지 분석해 드립니다.</p>
+          <button id="btn-start-quiz" class="btn btn-primary">테스트 시작하기</button>
+        </div>
+
+        <div id="quiz-question-container" class="hidden">
+          <span class="quiz-step-info" id="quiz-step">질문 1 / 5</span>
+          <h3 class="question-text" id="quiz-question">질문 내용이 여기에 들어갑니다.</h3>
+          <div class="quiz-options" id="quiz-options">
+            <!-- Options will be injected by JavaScript -->
+          </div>
+        </div>
+
+        <div id="quiz-result" class="hidden">
+          <div class="result-badge" id="result-badge">Result Persona</div>
+          <h3 class="result-title" id="result-name">지휘자형 바이브 코더</h3>
+          <p class="result-desc" id="result-description">성향 설명글이 여기에 노출됩니다.</p>
+          
+          <div class="result-stats">
+            <div class="stat-box">
+              <span class="stat-lbl">바이브 적합도</span>
+              <span class="stat-val" id="result-score-vibe">90%</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-lbl">키워드</span>
+              <span class="stat-val" id="result-keyword">의도 설계 / 노-코딩</span>
+            </div>
+          </div>
+
+          <button id="btn-restart-quiz" class="btn btn-secondary">
+            <i data-lucide="refresh-cw"></i> 다시 테스트하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 VibeCoding Space. Created with AI Vibes.</p>
+      <p class="footer-sub">이 웹페이지는 AI 개발 에이전트 Antigravity에 의해 바이브 코딩 방식으로 작성되었습니다.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
